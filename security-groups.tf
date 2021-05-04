@@ -1,7 +1,7 @@
 resource "openstack_compute_secgroup_v2" "ops-manager" {
   name        = "${var.project}-ops-manager"
   description = "${var.project} Ops Manager"
-  region      = "${var.region}"
+  region      = var.region
 
   rule {
     ip_protocol = "tcp"
@@ -45,3 +45,4 @@ resource "openstack_compute_secgroup_v2" "ops-manager" {
     self        = "true"
   }
 }
+
