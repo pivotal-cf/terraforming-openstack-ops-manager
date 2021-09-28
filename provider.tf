@@ -6,5 +6,6 @@ provider "openstack" {
   region      = var.region
   key         = var.key
   domain_name = var.domain
+  cacert_file = var.cacert_file
 }
 
