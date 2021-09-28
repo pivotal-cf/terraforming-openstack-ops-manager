@@ -9,6 +9,11 @@ variable "project" {
   description = "The name of the tenant (Identity v2) or project (Identity v3) to login with."
 }
 
+variable "cacert_file" {
+  type        = string
+  description = "The contents of the Openstack API CA."
+}
+
 variable "username" {
   type        = string
   description = "The username to login with."
