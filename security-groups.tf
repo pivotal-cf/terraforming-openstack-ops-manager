@@ -47,8 +47,8 @@ resource "openstack_compute_secgroup_v2" "ops-manager" {
 
   rule {
     ip_protocol = "icmp"
-    from_port   = "1"
-    to_port     = "65535"
+    from_port   = "-1"
+    to_port     = "-1"
     cidr        = "0.0.0.0/0"
   }
 }
